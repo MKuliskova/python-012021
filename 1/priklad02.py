@@ -15,4 +15,4 @@ if kod in sklad:
         print("Soucastka je skladem v danem mnozstvi.")
         sklad[kod] -= mnozstvi
 else:
-        print("Soucastka neni skladem.")
+    print("Soucastka neni skladem.")

@@ -47,8 +47,9 @@ morseCode = {
 }
 
 slovo = input("Napis slovo: ")
-znak = slovo.split()
 for znak in slovo:
     if znak == " ":
-        znak = "/"
-    print(morseCode[znak],end=" ")
+        print("/",end="")
+    else:
+        if znak in morseCode:
+            print(morseCode[znak],end="")

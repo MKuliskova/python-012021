@@ -490,6 +490,10 @@ staty = [
      'area': 390757.0}]
 
 regionInput = input("Napis region: ")
+i = 0
 for item in staty:
-   if regionInput in item["region"]:
+    if regionInput in item["region"]:
+        i +=1
         print(item["name"])
+if i==0:
+    print("Neznamy region")

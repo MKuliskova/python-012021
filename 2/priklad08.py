@@ -1,5 +1,6 @@
 def numberVerification(number):
-    if len(number) == 9 or len(number) == 13:
+    number = number.replace(" ", "")
+    if len(number) == 9 or (len(number) == 13 and number[0:4] == "+420"):
         return True
     else:
         return False

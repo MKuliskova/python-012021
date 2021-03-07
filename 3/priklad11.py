@@ -6,4 +6,4 @@ class Auto:
         self.availibility = True
 
 Peugeot = Auto("4A2 3020","Peugeot 403 Cabrio",47534,True)
-Skoda = Auto("1P3 4747","Škoda Octavia",41253,False)
+Skoda = Auto("1P3 4747","Škoda Octavia",41253,True)

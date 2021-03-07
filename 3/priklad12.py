@@ -17,7 +17,6 @@ class Auto:
     def pujc_auto(self):
         if self.availibility:
             return "Potvrzuji zapujceni vozidla"
-            self.availibility = False
         else:
             return "Vozidlo neni k dispozici"
     def getInfo(self):
@@ -55,4 +54,3 @@ elif car == "Skoda":
 else:
     print("Toto auto nemame k dispozici.")
 
-#nefunguje mi zmena hodnoty na False

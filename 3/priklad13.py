@@ -12,13 +12,13 @@
 
 class Auto:
     def vrat_auto(self,tachometer,daysRented):
-        self.tachometer = tachometer
+        self.kilometres += tachometer
         self.daysRented = daysRented
         if self.daysRented < 7:
             self.price = self.daysRented * 400
         elif self.daysRented >= 7:
             self.price = self.daysRented * 300
-        return f"Cena za pujceni je {self.price} Kc."
+        return f"Cena za pujceni je {self.price} Kc. Stav tachometru je {self.kilometres}."
     def auto_pujceno(self):
         self.availibility = False
     def pujc_auto(self):
@@ -51,7 +51,7 @@ else:
 
 ujeteKilometry = int(input("Kolik zakaznik ujel kilometru? "))
 dnyPujceni = int(input("Kolik dni bylo auto pujceno? "))
-if car == Peugeot:
+if car == "Peugeot":
     print(Peugeot.vrat_auto(ujeteKilometry,dnyPujceni))
 elif car == "Skoda":
     print(Skoda.vrat_auto(ujeteKilometry,dnyPujceni))

@@ -22,3 +22,4 @@ film1 = Film("Harry Potter","fantasy",150)
 serial1 = Serial("Pratele","komedie",120,20)
 print(film1.getInfo())
 print(serial1.getInfo())
+

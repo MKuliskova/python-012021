@@ -5,4 +5,8 @@
 import pandas
 vykazy = pandas.read_csv("vykazy.csv")
 print(vykazy)
-print(vykazy.groupby("project")["hours"].sum())
+
+vykazy_grouped = vykazy.groupby("project")["hours"].sum()
+print(vykazy_grouped)
+
+

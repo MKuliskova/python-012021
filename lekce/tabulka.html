@@ -1,0 +1,3 @@
+snihdf = pandas.DataFrame(snih, columns=['rok', 'hora', 'udoli'])
+snihdf = snihdf.set_index('rok')
+snihdf.to_html("tabulka.html")
